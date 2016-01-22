@@ -26,7 +26,7 @@
             <SeekBar
                 android:layout_width="347dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/seekBar2"
+                android:id="@+id/tunerSeekbar"
                 android:background="#aaaaaa" />
 
             <TextView
@@ -34,7 +34,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="Tuner"
-                android:id="@+id/textView3"
+                android:id="@+id/tunerTextView"
                 android:layout_weight="0.17"
                 android:textSize="28sp"
                 android:textStyle="bold"
@@ -63,7 +63,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Station Display"
-                android:id="@+id/textView2"
+                android:id="@+id/stationDisplayTextView"
                 android:layout_gravity="center_horizontal"
                 android:textSize="40sp"
                 android:background="#008000" />
@@ -78,42 +78,42 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="1"
-                    android:id="@+id/button" />
+                    android:id="@+id/presetButton1" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="2"
-                    android:id="@+id/button2" />
+                    android:id="@+id/presetButton2" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="3"
-                    android:id="@+id/button3" />
+                    android:id="@+id/presetButton3" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="4"
-                    android:id="@+id/button4" />
+                    android:id="@+id/presetButton4" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="5"
-                    android:id="@+id/button5" />
+                    android:id="@+id/presetButton5" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="6"
-                    android:id="@+id/button6" />
+                    android:id="@+id/presetButton6" />
             </LinearLayout>
 
             <LinearLayout
@@ -154,13 +154,13 @@
                 android:layout_width="127dp"
                 android:layout_height="65dp"
                 android:text="New ToggleButton"
-                android:id="@+id/toggleButton"
+                android:id="@+id/powerToggleButton"
                 android:layout_gravity="right" />
 
             <SeekBar
                 android:layout_width="291dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/seekBar"
+                android:id="@+id/volumeSeekBar"
                 android:layout_gravity="right"
                 android:background="#AAAAAA" />
 
@@ -173,7 +173,7 @@
                 android:layout_height="95dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="0"
-                android:id="@+id/textView"
+                android:id="@+id/volumeDisplayTextView"
                 android:layout_gravity="right"
                 android:background="#008000"
                 android:textAlignment="center"
@@ -215,7 +215,7 @@
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:text="CD Deck"
-                    android:id="@+id/textView4"
+                    android:id="@+id/cDDeckTextView"
                     android:textStyle="bold"
                     android:textColor="#000000" />
 
@@ -223,8 +223,10 @@
                     android:layout_width="504dp"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:id="@+id/textView5"
-                    android:background="#000000" />
+                    android:id="@+id/cDGraphicTextView"
+                    android:background="#000000"
+                    android:text="    ____________________________________________"
+                    android:textColor="#aaaaaa" />
 
                 <Space
                     android:layout_width="20px"
@@ -239,7 +241,7 @@
                     <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="47dp"
-                        android:id="@+id/imageButton"
+                        android:id="@+id/pauseButton"
                         android:src="@mipmap/pause_button"
                         android:background="#ffffff"
                         android:nestedScrollingEnabled="false" />
@@ -251,7 +253,7 @@
                     <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/imageButton2"
+                        android:id="@+id/stopButton"
                         android:src="@mipmap/stop_button"
                         android:background="#ffffff" />
 
@@ -262,7 +264,7 @@
                     <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/imageButton3"
+                        android:id="@+id/ejectButton"
                         android:src="@mipmap/eject_button"
                         android:background="#ffffff" />
 
@@ -273,7 +275,7 @@
                     <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/imageButton4"
+                        android:id="@+id/skipTrackButton"
                         android:background="#ffffff"
                         android:src="@mipmap/fast" />
 
@@ -284,7 +286,7 @@
                     <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/imageButton5"
+                        android:id="@+id/replayButton"
                         android:src="@mipmap/replay"
                         android:background="#ffffff" />
                 </LinearLayout>
