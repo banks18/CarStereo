@@ -38,7 +38,8 @@
                 android:layout_weight="0.17"
                 android:textSize="28sp"
                 android:textStyle="bold"
-                android:background="#aaaaaa" />
+                android:background="#aaaaaa"
+                android:textColor="#000000" />
 
             <Space
                 android:layout_width="match_parent"
@@ -213,8 +214,10 @@
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="Medium Text"
-                    android:id="@+id/textView4" />
+                    android:text="CD Deck"
+                    android:id="@+id/textView4"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="504dp"
@@ -222,6 +225,10 @@
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:id="@+id/textView5"
                     android:background="#000000" />
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="20px" />
 
                 <LinearLayout
                     android:orientation="horizontal"
@@ -266,7 +273,9 @@
                     <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/imageButton4" />
+                        android:id="@+id/imageButton4"
+                        android:background="#ffffff"
+                        android:src="@mipmap/fast" />
 
                     <Space
                         android:layout_width="20px"
@@ -275,7 +284,9 @@
                     <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/imageButton5" />
+                        android:id="@+id/imageButton5"
+                        android:src="@mipmap/replay"
+                        android:background="#ffffff" />
                 </LinearLayout>
 
                 <Space
